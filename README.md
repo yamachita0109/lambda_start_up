@@ -1,5 +1,11 @@
 # lambda_template
 
+## Environment
+
+```
+$ docker-compose up -d --build
+```
+
 ## Exec Node.js
 
 ```
