@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  template:
+    container_name: template
+    build: docker/.
+    volumes: 
+      - ./src:/src
+    command: [sh, -c, npm install]
