@@ -33,3 +33,9 @@ $ docker-compose run --rm template npm test
 ```
 $ docker-compose run --rm template npm run test-coverage
 ```
+
+## Deploy
+
+```
+$ ./deploy.sh
+```
