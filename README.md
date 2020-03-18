@@ -15,11 +15,15 @@ $ docker-compose run --rm template {cmd}
 ## Install Command
 
 ```
-$ docker-compose run --rm template npm install standard
-$ docker-compose run --rm template npm install mocha
-$ docker-compose run --rm template npm install istanbul
-$ docker-compose run --rm template npm install power-assert
-$ docker-compose run --rm template npm install intelli-espower-loader
+# dev
+$ docker-compose run --rm template npm install -D standard
+$ docker-compose run --rm template npm install -D mocha
+$ docker-compose run --rm template npm install -D istanbul
+$ docker-compose run --rm template npm install -D power-assert
+$ docker-compose run --rm template npm install -D intelli-espower-loader
+
+# prod
+$ docker-compose run --rm template npm install aws-sdk
 ```
 
 ## Exec Test

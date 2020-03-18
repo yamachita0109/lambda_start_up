@@ -11,7 +11,7 @@ aws configure set region $AWS_DEFAULT_REGION --profile $AWS_TEST_IAM_USER_NAME
 
 
 # npm install
-docker-compose run --rm template npm install
+docker-compose run --rm template npm install --production
 
 # create module
 rm -fr release && mkdir release
