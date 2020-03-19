@@ -7,7 +7,7 @@ Resources:
       FunctionName: "TemplateFunction"
       Handler: "index.handler"
       Runtime: "nodejs12.x"
-      Role: "arn:aws:iam::107342595022:role/lambda"
+      Role: "arn:aws:iam::xxxxxxxxxxxxxx:role/lambda"
       MemorySize: 128
       Timeout: 30
       Environment:

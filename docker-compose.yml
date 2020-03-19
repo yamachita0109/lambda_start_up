@@ -6,4 +6,3 @@ services:
     build: docker/.
     volumes: 
       - ./src:/src
-    command: [sh, -c, npm install]
