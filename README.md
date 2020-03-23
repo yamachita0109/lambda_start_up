@@ -22,6 +22,7 @@ $ docker-compose run --rm template npm install -D mocha
 $ docker-compose run --rm template npm install -D istanbul
 $ docker-compose run --rm template npm install -D power-assert
 $ docker-compose run --rm template npm install -D intelli-espower-loader
+$ docker-compose run --rm lambda_app_user_regist npm install -D aws-sdk-mock
 
 # release
 $ docker-compose run --rm template npm install aws-sdk
