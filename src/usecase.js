@@ -1,20 +1,14 @@
 'use strict'
-const DataStore = require('./model/dataStore')
+const Setting = require('./model/setting')
 
 const execute = () => new Promise((resolve, reject) => {
   Promise.resolve()
     .then(() => {
-      return new Promise((resolve, reject) => {
-        try {
-          const data = new DataStore()
-          resolve(data.getProp())
-        } catch (e) {
-          reject(e)
-        }
-      })
+      const setting = new Setting()
+      return setting.create()
     })
     .then((res) => {
-      resolve(res)
+      resolve(res.name)
     })
     .catch(reject)
 })

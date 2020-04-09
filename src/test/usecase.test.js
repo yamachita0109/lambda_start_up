@@ -7,6 +7,6 @@ describe('# usecase', () => {
   it('## execute', async () => {
     let res
     await usecase.execute().then((result) => { res = result })
-    assert.strictEqual(res, 'Template')
+    assert.strictEqual(res, 'yamashita')
   })
 })
