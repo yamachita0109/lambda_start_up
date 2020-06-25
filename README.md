@@ -19,15 +19,10 @@ $ docker-compose run --rm template {cmd}
 # dev
 $ docker-compose run --rm template npm install -D standard
 $ docker-compose run --rm template npm install -D mocha
-$ docker-compose run --rm template npm install -D istanbul
-$ docker-compose run --rm template npm install -D power-assert
-$ docker-compose run --rm template npm install -D intelli-espower-loader
 $ docker-compose run --rm template npm install -D aws-sdk-mock
-<<<<<<< HEAD
 $ docker-compose run --rm template npm install -D dotenv
 $ docker-compose run --rm template npm install -D handlebars@4.5.3
-=======
->>>>>>> 7f43dfd7062a2ad94a325ca6b172f9873abc449e
+$ docker-compose run --rm template npm install -D nyc
 
 # release
 $ docker-compose run --rm template npm install aws-sdk
@@ -46,6 +41,7 @@ $ docker-compose run --rm template npm test
 
 ```
 $ docker-compose run --rm template npm run test-coverage
+$ open src/coverage/index.html 
 ```
 
 ## Deploy

@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "standard && mocha --recursive",
-    "test-coverage": "standard && istanbul cover --print both _mocha -- test/* --require intelli-espower-loader"
+    "test-coverage": "standard && nyc --reporter=html --reporter=text mocha --recursive"
   },
-  "author": "",
+  "author": "yamachita0109",
   "license": "ISC",
   "dependencies": {
     "aws-sdk": "^2.642.0",
@@ -18,10 +18,8 @@
   "devDependencies": {
     "dotenv": "^8.2.0",
     "handlebars": "^4.5.3",
-    "intelli-espower-loader": "^1.0.1",
-    "istanbul": "^0.4.5",
     "mocha": "^7.1.0",
-    "power-assert": "^1.6.1",
+    "nyc": "^15.1.0",
     "standard": "^14.3.3"
   }
 }
